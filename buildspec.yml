@@ -14,3 +14,6 @@ phases:
   post_build:
     commands:
       - echo 'hello'
+artifacts:
+  files:
+    - target/devops-practice-0.0.1-SNAPSHOT.jar
