@@ -1,19 +1,16 @@
 version: 0.0
 os: linux
 files:
-  - source: Config/config.txt
-    destination: /webapps/Confi
+  - source: target/devops-practice-0.0.1-SNAPSHOT.jar
+    destination: /home/cloud_user
 hooks:
   BeforeInstall:
-    - location: Scripts/UnzipResourceBundle.sh
-    - location: Scripts/UnzipDataBundle.sh
+    - location: scripts/start.sh
   AfterInstall:
-    - location: Scripts/RunResourceTests.sh
+    - location: scripts/start.sh
       timeout: 180
   ApplicationStart:
-    - location: Scripts/RunFunctionalTests.sh
+    - location: scripts/start.sh
       timeout: 3600
   ValidateService:
-    - location: Scripts/MonitorService.sh
-      timeout: 3600
-      runas: codedeployuser
+    - location: scripts/start.sh
