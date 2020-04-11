@@ -5,12 +5,12 @@ files:
     destination: /home/cloud_user
 hooks:
   BeforeInstall:
-    - location: scripts/start.sh
+    - location: scripts/run.sh
   AfterInstall:
-    - location: scripts/start.sh
+    - location: scripts/run.sh
       timeout: 180
   ApplicationStart:
-    - location: scripts/start.sh
+    - location: scripts/run.sh
       timeout: 3600
   ValidateService:
-    - location: scripts/start.sh
+    - location: scripts/run.sh
