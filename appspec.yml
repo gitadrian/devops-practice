@@ -6,6 +6,7 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/run.sh
+      timeout: 180
       runas: cloud_user
   AfterInstall:
     - location: scripts/run.sh
@@ -13,8 +14,9 @@ hooks:
       runas: cloud_user
   ApplicationStart:
     - location: scripts/run.sh
-      timeout: 3600
+      timeout: 300
       runas: cloud_user
   ValidateService:
     - location: scripts/run.sh
+      timeout: 180
       runas: cloud_user
