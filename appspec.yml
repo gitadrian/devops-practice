@@ -4,19 +4,7 @@ files:
   - source: target/devops-practice-0.0.1-SNAPSHOT.jar
     destination: /home/ec2-user
 hooks:
-  BeforeInstall:
-    - location: scripts/
-      timeout: 180
-      runas: ec2-user
-  AfterInstall:
-    - location: scripts/
-      timeout: 180
-      runas: ec2-user
   ApplicationStart:
     - location: scripts/run.sh
       timeout: 300
-      runas: ec2-user
-  ValidateService:
-    - location: scripts/
-      timeout: 180
       runas: ec2-user
