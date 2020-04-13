@@ -5,11 +5,11 @@ files:
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: scripts/run.sh
+    - location: scripts/
       timeout: 180
       runas: ec2-user
   AfterInstall:
-    - location: scripts/run.sh
+    - location: scripts/
       timeout: 180
       runas: ec2-user
   ApplicationStart:
@@ -17,6 +17,6 @@ hooks:
       timeout: 300
       runas: ec2-user
   ValidateService:
-    - location: scripts/run.sh
+    - location: scripts/
       timeout: 180
       runas: ec2-user
