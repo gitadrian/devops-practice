@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo 'hello world'
+java -jar devops-practice-0.0.1-SNAPSHOT.jar
