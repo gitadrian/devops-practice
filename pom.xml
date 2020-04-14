@@ -12,6 +12,7 @@
 	<artifactId>devops-practice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>devops-practice</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
