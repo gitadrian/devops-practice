@@ -16,6 +16,7 @@ phases:
       - echo 'hello'
 artifacts:
   files:
-    - scripts/*
+    - scripts/stop.sh
+    - scripts/run.sh
     - target/devops-practice-0.0.1-SNAPSHOT.jar
     - appspec.yml
