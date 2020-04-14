@@ -4,6 +4,10 @@ files:
   - source: target/devops-practice-0.0.1-SNAPSHOT.jar
     destination: /home/ec2-user
 hooks:
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 1500
+      runas: root
   ApplicationStart:
     - location: scripts/run.sh
       timeout: 1500
