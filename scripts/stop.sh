@@ -1,5 +1,5 @@
 #!/bin/bash
-pids=\$( ps aux | grep java | grep -v grep | awk '{print \$2}' )
+pids=$( ps aux | grep java | grep -v grep | awk '{print $2}' )
 
 for p in $pids
  do
