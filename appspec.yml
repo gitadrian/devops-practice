@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: target/devops-practice-0.0.1-SNAPSHOT.jar
+  - source: target/devops-practice-0.0.1-SNAPSHOT.war
     destination: /home/ec2-user
 hooks:
   ApplicationStop:
