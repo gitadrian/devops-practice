@@ -8,7 +8,7 @@ public class MyController {
 	
 	@GetMapping("/api")
 	public String test() {
-		return "Hello";
+		return "ey prro";
 	}
 
 }
