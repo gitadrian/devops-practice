@@ -11,8 +11,8 @@ pipeline {
     stage('Test') {
       steps {
         
-       sh 'ls -la'
-        sh 'pwd'
+       sh 'mvn clean package'
+        sh 'ls -la'
         
         script {
          test.info 'shared lib'
