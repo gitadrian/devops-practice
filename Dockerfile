@@ -1,4 +1,4 @@
 FROM openjdk:8
-RUN mvn clean package
-COPY ./target/*.jar /var/opt/
-CMD ["java", "-jar", "*.jar"]
+COPY ./target/ /var/opt/
+WORKDIR /var/opt/
+CMD ["java", "-jar", "devops-practice-0.0.1-SNAPSHOT.war"]
